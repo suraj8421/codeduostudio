@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { Room } from "./Room";
-import HeroLights from "./Herolights";
+import HeroLights from "./HeroLights";
 
 const AutoRotatingGroup = ({ children, isMobile }) => {
   const groupRef = useRef();
@@ -25,7 +25,7 @@ const AutoRotatingGroup = ({ children, isMobile }) => {
   );
 };
 
-const HeroExprience = () => {
+const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width:1024px)" });
   const isMobile = useMediaQuery({ query: "(max-width:768px)" });
 
@@ -47,5 +47,5 @@ const HeroExprience = () => {
   );
 };
 
-export default HeroExprience;
+export default HeroExperience;
 
